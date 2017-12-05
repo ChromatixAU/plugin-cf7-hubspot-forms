@@ -1,6 +1,6 @@
-# CF7 Hubspot Forms Plugin 🔁
+# CF7 HubSpot Forms Plugin 🔁
 
-A fork of the CF7 Hubspot WordPress plugin which no longer seems to be maintained.
+A fork of the CF7 HubSpot WordPress plugin which no longer seems to be maintained.
 
 Forked and contributed to by [David James](https://github.com/daviddeejjames)
 
