@@ -201,7 +201,7 @@ if ( is_plugin_active( 'contact-form-7/wp-contact-form-7.php' ) ) {
 
   function cf7hsfi_frontend_submit_form( $wpcf7_data ) {
 
-    $post_id = $wpcf7_data->id;
+    $post_id = $wpcf7_data->id();
     $enabled = get_post_meta($post_id, "_cf7hsfi_enabled", true);
     $portal_id = get_post_meta($post_id, "_cf7hsfi_portal_id", true);
     $form_id = get_post_meta($post_id, "_cf7hsfi_form_id", true);
@@ -212,10 +212,8 @@ if ( is_plugin_active( 'contact-form-7/wp-contact-form-7.php' ) ) {
 
     if( $enabled == 1 && $form_fields ) {
 
-      $hs_cookie = $_COOKIE["hubspotutk"];
       $user_ip = $_SERVER["REMOTE_ADDR"];
       $hs_context = array(
-        "hutk" => $hs_cookie,
         "ipAddress" => $user_ip
       );
 
