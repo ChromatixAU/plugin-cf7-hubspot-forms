@@ -1,0 +1,6 @@
+{
+    "name": "chromatix/plugin-cf7-hubspot-forms",
+    "description": "Chromatix - CF7 Hubspot Forms",
+    "type": "wordpress-plugin",
+    "require": {}
+}
